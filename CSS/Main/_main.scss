@@ -2,4 +2,12 @@ main{
     height: 1000px;
     position: relative;
     z-index: 20;
+    .test-section
+    {
+        height: 700px;
+        width: 100%;
+        background-color: red;
+        transition: 2s all;
+    }
 }
+
