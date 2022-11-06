@@ -175,7 +175,7 @@ header .header-container .website-author a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 5px;
-  font-size: 40px;
+  font-size: 30px;
   font-size: bold;
   color: white;
 }
@@ -233,7 +233,7 @@ header .header-container .right-side .top-menu li a {
 
 header .header-container .right-side .bottom-menu {
   height: 50%;
-  font-size: 20px;
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,6 +283,14 @@ main {
   height: 1000px;
   position: relative;
   z-index: 20;
+}
+
+main .test-section {
+  height: 700px;
+  width: 100%;
+  background-color: red;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 * {
