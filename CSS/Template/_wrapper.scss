@@ -1,96 +1,88 @@
 .main-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-family: "Prompt", sans-serif;
-    ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Prompt", sans-serif;
+  .top-background {
+    height: 100vh;
+    background-image: url("../../Assets/Images/background.svg");
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    animation-name: pictures;
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
 
-    .top-background {
-        height: 100vh;
-        background-image: url('../../Assets/Images/background.svg');
-        position: relative;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        color: #ffffff;
-        animation-name: pictures;
-        animation-direction: alternate-reverse;
-        animation-duration: 10s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-        animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
 
-        .top-dark-background {
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            opacity: 0.7;
-            
-        }
-        .information-container{
-            position: absolute;
-            top: 40%;
-            left: 12%;
-            .information-title{
-                color: rgba(0, 0, 0, 0.836);
-                background-color: #ffffff;
-                padding: 10px 7.5px;
-                width: 600px;
-            }
-            .information-description{
-                color: white;
-                font-size: 44px;
-                max-width: 800px;
-                display: flex;
-                margin-top: 20px;
-            }
-            .information-user-description{
-                margin-top: 20px; 
-                width: 600px;
-                font-size: 16px;
-                line-height: 1.5
-                ;
-            }
-            .github-button{
-                margin-top: 20px;  
-                width: 160px;
-                height: 60px;
-                a{
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: rgba(0, 0, 0, 0.836);
-                    font-size: 22px;
-                    font-weight: 800;
-                    background-color: white;
-                    cursor: pointer;
-                    &:hover {
-                        background-color: orange;
-                        color: white;
-                        }
-                }
-            }
-        }
+    .top-dark-background {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.7;
     }
-
+    .information-container {
+      position: absolute;
+      top: 40%;
+      left: 12%;
+      .information-title {
+        color: rgba(0, 0, 0, 0.836);
+        background-color: #ffffff;
+        padding: 10px 7.5px;
+        width: 600px;
+      }
+      .information-description {
+        color: white;
+        font-size: 44px;
+        max-width: 800px;
+        display: flex;
+        margin-top: 20px;
+      }
+      .information-user-description {
+        margin-top: 20px;
+        width: 600px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .github-button {
+        margin-top: 20px;
+        width: 160px;
+        height: 60px;
+        a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgba(0, 0, 0, 0.836);
+          font-size: 22px;
+          font-weight: 800;
+          background-color: white;
+          transition: background-color 200ms ease-in-out;
+          cursor: pointer;
+          &:hover {
+            background-color: orange;
+            color: white;
+          }
+        }
+      }
+    }
+  }
 }
 
-@keyframes pictures
-{
-    0%{
-        background-image: url('/Assets//Images/header_image_1920.jpg');
-    }
-    60%{
-        background-image: url('/Assets//Images//computer-1209641_1920.jpg');
-    }
-    100%{
-        background-image: url('/Assets//Images//background.svg');
-    }
+@keyframes pictures {
+  0% {
+    background-image: url("/Assets//Images/header_image_1920.jpg");
+  }
+  100% {
+    background-image: url("/Assets//Images//computer-1209641_1920.jpg");
+  }
 }
