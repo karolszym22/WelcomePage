@@ -147,7 +147,7 @@
 
 .scroll-background {
   background-color: white !important;
-  opacity: 0.9;
+  opacity: 0.95;
   -webkit-transition: background-color 270ms ease-in-out;
   transition: background-color 270ms ease-in-out;
 }
@@ -222,6 +222,8 @@ header .header-container .website-author a {
   font-size: 30px;
   font-size: bold;
   color: white;
+  -webkit-transition: background-color 270ms ease-in-out;
+  transition: background-color 270ms ease-in-out;
 }
 
 header .header-container .website-author .author-lastname {

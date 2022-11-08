@@ -33,6 +33,7 @@ header {
         font-size: 30px;
         font-size: bold;
         color: white;
+        transition: background-color 270ms ease-in-out;
       }
 
       .author-lastname {
