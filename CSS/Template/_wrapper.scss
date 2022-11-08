@@ -32,11 +32,17 @@
       position: absolute;
       top: 40%;
       left: 12%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 12%;
       .information-title {
         color: rgba(0, 0, 0, 0.836);
         background-color: #ffffff;
         padding: 10px 7.5px;
-        width: 600px;
+        max-width: 600px;
+        @media only screen and (max-width: 780px) {
+          font-size: 30px; 
+        }
       }
       .information-description {
         color: white;
@@ -44,12 +50,16 @@
         max-width: 800px;
         display: flex;
         margin-top: 20px;
+        @media only screen and (max-width: 780px) {
+          font-size: 30px; 
+        }
       }
       .information-user-description {
         margin-top: 20px;
-        width: 600px;
+        max-width: 600px;
         font-size: 16px;
         line-height: 1.5;
+        display: flex;
       }
       .github-button {
         margin-top: 20px;
@@ -72,6 +82,7 @@
             background-color: orange;
             color: white;
           }
+         
         }
       }
     }
@@ -85,4 +96,25 @@
   100% {
     background-image: url("/Assets//Images//computer-1209641_1920.jpg");
   }
+}
+
+
+.scroll-background{
+  background-color: white!important;;
+  opacity: 0.9;
+  transition: background-color 270ms ease-in-out;
+}
+
+.scroll-font{
+  background-color: rgb(0, 0, 0)!important;;
+  filter: blur(0);
+  transition: background-color 270ms ease-in-out;
+}
+.scroll-author-title{
+  color: black!important;;
+}
+
+.scroll-border{
+  border-color: black!important;
+  transition: background-color 270ms ease-in-out;
 }
