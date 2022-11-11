@@ -1,4 +1,6 @@
 
+
+
 const colors = ['orange', 'blue']
 
 
@@ -16,9 +18,9 @@ window.addEventListener('scroll', function () {
     bottomMenu.classList.add('scroll-border')
     headerContainer.classList.add('scroll-background');
     authorName.classList.add('scroll-author-title');
-    phoneNumber.classList.add('scroll-author-title')
+    phoneNumber.classList.add('scroll-nav')
     headerNav.forEach((e)=>{
-      e.classList.add('scroll-author-title');
+      e.classList.add('scroll-nav');
     })
   }else
   {
@@ -34,6 +36,9 @@ window.addEventListener('scroll', function () {
 })
 
 
-// Can also be included with a regular script tag
 
+
+
+
+var typed = new Typed('.element', options)
 
