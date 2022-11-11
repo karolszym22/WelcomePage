@@ -11,7 +11,7 @@ const headerNav = document.querySelectorAll('.header-nav');
 window.addEventListener('scroll', function () {
 
   const scrollFromTop = window.pageYOffset
-  if(scrollFromTop > 319)
+  if(scrollFromTop > 50)
   {
     bottomMenu.classList.add('scroll-border')
     headerContainer.classList.add('scroll-background');
@@ -33,4 +33,7 @@ window.addEventListener('scroll', function () {
 
 })
 
-console.log("asdsadas")
+
+// Can also be included with a regular script tag
+
+

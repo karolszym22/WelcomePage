@@ -44,7 +44,7 @@
 .main-wrapper .top-background .information-container {
   position: absolute;
   top: 40%;
-  left: 12%;
+  left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +53,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 12%;
+  -webkit-animation: example 2s ease-out;
+          animation: example 2s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .main-wrapper .top-background .information-container .information-title {
@@ -168,6 +175,28 @@
   border-color: black !important;
   -webkit-transition: background-color 270ms ease-in-out;
   transition: background-color 270ms ease-in-out;
+}
+
+@-webkit-keyframes example {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    left: 12%;
+  }
+}
+
+@keyframes example {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    left: 12%;
+  }
 }
 
 header {
@@ -325,15 +354,6 @@ header .header-container .right-side .bottom-menu li::after {
 main {
   height: 1000px;
   position: relative;
-  z-index: 20;
-}
-
-main .test-section {
-  height: 700px;
-  width: 100%;
-  background-color: red;
-  -webkit-transition: 2s all;
-  transition: 2s all;
 }
 
 * {
