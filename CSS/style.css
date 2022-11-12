@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -264,6 +265,13 @@ header .header-container .website-author a {
   color: white;
   -webkit-transition: background-color 270ms ease-in-out;
   transition: background-color 270ms ease-in-out;
+  opacity: 0;
+  -webkit-animation: navs-animation 2s ease-out;
+          animation: navs-animation 2s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 header .header-container .website-author .author-lastname {
@@ -314,8 +322,43 @@ header .header-container .right-side .top-menu li {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 15px;
+  height: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+header .header-container .right-side .top-menu li:hover {
+  border: 1px solid orange;
+}
+
+header .header-container .right-side .top-menu li:before {
+  /*用僞類構造動態邊框層*/
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 40px;
+  background-image: conic-gradient(transparent, transparent, #4afa37);
+  -webkit-animation: animate 4s linear infi;
+          animation: animate 4s linear infi;
+}
+
+header .header-container .right-side .top-menu li:after {
+  /*用僞類構造動態邊框層*/
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 40px;
+  background-image: conic-gradient(transparent, #e7f779);
+  /*Use conic gradient to render the flowing styles */
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+  /*Make it move*/
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  /*Prevent overlaps*/
 }
 
 header .header-container .right-side .top-menu li a {
@@ -331,10 +374,6 @@ header .header-container .right-side .top-menu li a {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-}
-
-header .header-container .right-side .top-menu li a:hover {
-  border: 1px solid orange;
 }
 
 header .header-container .right-side .bottom-menu {
@@ -419,6 +458,28 @@ header .header-container .right-side .bottom-menu li::after {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

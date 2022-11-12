@@ -33,6 +33,10 @@ header {
         font-size: bold;
         color: white;
         transition: background-color 270ms ease-in-out;
+        opacity: 0;
+            animation: navs-animation 2s ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 0.3s;
       }
 
       .author-lastname {
@@ -64,8 +68,31 @@ header {
           display: flex;
           align-items: center;
           padding: 0 15px;
+          height: 60px;
           box-sizing: border-box;
-
+          overflow: hidden;
+          position: relative;
+          background-color: rgba(0,0,0,0.75);
+          &:hover {
+            border: 1px solid orange;
+          }
+          &:before { /*用僞類構造動態邊框層*/
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 40px;
+            background-image: conic-gradient(transparent,transparent,#4afa37);
+            animation: animate 4s linear infi
+        }
+          &:after { /*用僞類構造動態邊框層*/
+          content: "";
+          position: absolute;
+          width: 500px;
+          height: 40px;
+          background-image: conic-gradient(transparent,#e7f779); /*Use conic gradient to render the flowing styles */
+          animation: animate 4s linear infinite; /*Make it move*/
+          animation-delay: -2s; /*Prevent overlaps*/
+        }
           a {
             color: white;
             font-size: 14px;
@@ -75,11 +102,9 @@ header {
             animation: navs-animation 2s ease-out;
             animation-fill-mode: forwards;
             animation-delay: 3s;
-            &:hover {
-              border: 1px solid orange;
-            }
-          }
+            
         }
+       }
       }
 
       .bottom-menu {
@@ -137,5 +162,13 @@ header {
 
   100% {
     opacity: 1;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }
