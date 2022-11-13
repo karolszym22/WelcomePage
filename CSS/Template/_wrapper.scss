@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: "Prompt", sans-serif;
+  font-family: 'Roboto', sans-serif;
   .top-background {
     height: 100vh;
     background-image: url("../../Assets/Images/background.svg");
@@ -151,6 +151,41 @@
 
 
 
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
 
 
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
 
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}

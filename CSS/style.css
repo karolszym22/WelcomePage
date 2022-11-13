@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .main-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -9,7 +8,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Prompt", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-wrapper .top-background {
@@ -211,6 +210,94 @@
   }
 }
 
+@-webkit-keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -245,6 +332,9 @@ header .header-container .website-author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
 }
 
 header .header-container .website-author a {
@@ -313,67 +403,91 @@ header .header-container .right-side .top-menu {
           justify-content: flex-end;
 }
 
-header .header-container .right-side .top-menu li {
+header .header-container .right-side .top-menu .contact-nav {
+  position: relative;
+  padding: 2px 5px;
+  margin-top: 7px;
+  height: 60%;
+  color: white;
+  font-size: 12;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12;
+  overflow: hidden;
+}
+
+header .header-container .right-side .top-menu .contact-nav span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#171618), to(#ffb13b));
+  background: linear-gradient(to right, #171618, #ffb13b);
+  -webkit-animation: animate1 2s linear infinite;
+          animation: animate1 2s linear infinite;
+}
+
+header .header-container .right-side .top-menu .contact-nav span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#171618), to(#ffb13b));
+  background: linear-gradient(to bottom, #171618, #ffb13b);
+  -webkit-animation: animate2 2s linear infinite;
+          animation: animate2 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+header .header-container .right-side .top-menu .contact-nav span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(#171618), to(#ffb13b));
+  background: linear-gradient(to left, #171618, #ffb13b);
+  -webkit-animation: animate3 2s linear infinite;
+          animation: animate3 2s linear infinite;
+}
+
+header .header-container .right-side .top-menu .contact-nav span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#171618), to(#ffb13b));
+  background: linear-gradient(to top, #171618, #ffb13b);
+  -webkit-animation: animate4 2s linear infinite;
+          animation: animate4 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+header .header-container .right-side .top-menu .contact-nav a {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: color 270ms ease-in-out;
+  transition: color 270ms ease-in-out;
+  display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px;
-  height: 60px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
-header .header-container .right-side .top-menu li:hover {
-  border: 1px solid orange;
-}
-
-header .header-container .right-side .top-menu li:before {
-  /*用僞類構造動態邊框層*/
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 40px;
-  background-image: conic-gradient(transparent, transparent, #4afa37);
-  -webkit-animation: animate 4s linear infi;
-          animation: animate 4s linear infi;
-}
-
-header .header-container .right-side .top-menu li:after {
-  /*用僞類構造動態邊框層*/
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 40px;
-  background-image: conic-gradient(transparent, #e7f779);
-  /*Use conic gradient to render the flowing styles */
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
-  /*Make it move*/
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  /*Prevent overlaps*/
-}
-
-header .header-container .right-side .top-menu li a {
-  color: white;
-  font-size: 14px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 5px 5px;
-  opacity: 0;
-  -webkit-animation: navs-animation 2s ease-out;
-          animation: navs-animation 2s ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+header .header-container .right-side .top-menu .contact-nav a:hover {
+  color: orange;
 }
 
 header .header-container .right-side .bottom-menu {
@@ -411,6 +525,8 @@ header .header-container .right-side .bottom-menu li .header-nav {
           box-sizing: border-box;
   display: inline-block;
   height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 header .header-container .right-side .bottom-menu li .header-nav:hover {
@@ -458,28 +574,6 @@ header .header-container .right-side .bottom-menu li::after {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes animate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
   }
 }
 
