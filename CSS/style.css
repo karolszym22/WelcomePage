@@ -112,6 +112,7 @@
   display: block;
   height: 100%;
   width: 100%;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,6 +128,9 @@
   background-color: white;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
   cursor: pointer;
 }
 
@@ -519,7 +523,7 @@ header .header-container .right-side .bottom-menu li {
 }
 
 header .header-container .right-side .bottom-menu li .header-nav {
-  color: white;
+  color: #cfc9c9;
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -527,10 +531,12 @@ header .header-container .right-side .bottom-menu li .header-nav {
   height: 100%;
   text-transform: uppercase;
   letter-spacing: 4px;
+  -webkit-transition: color 270ms ease-in-out;
+  transition: color 270ms ease-in-out;
 }
 
 header .header-container .right-side .bottom-menu li .header-nav:hover {
-  border-bottom: 1px solid orange;
+  color: white;
 }
 
 header .header-container .right-side .bottom-menu li::after {
