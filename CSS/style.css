@@ -378,7 +378,7 @@ header .header-container .right-side {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 70%;
+  width: 50%;
   -webkit-animation: bottom-menu-animation 2s ease-out;
           animation: bottom-menu-animation 2s ease-out;
   -webkit-animation-fill-mode: forwards;
@@ -418,6 +418,13 @@ header .header-container .right-side .top-menu .contact-nav {
   letter-spacing: 4px;
   font-size: 12;
   overflow: hidden;
+  opacity: 0;
+  -webkit-animation: navs-animation 2s ease-out;
+          animation: navs-animation 2s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 
 header .header-container .right-side .top-menu .contact-nav span:nth-child(1) {
