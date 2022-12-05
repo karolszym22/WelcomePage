@@ -7,7 +7,7 @@ const colors = ['orange', 'blue']
 const headerContainer = document.querySelector('header')
 const authorName = document.querySelector('.author-name');
 const bottomMenu = document.querySelector('.bottom-menu');
-const phoneNumber = document.querySelector('.phone-number');
+const phoneNumber = document.querySelector('.contact');
 const headerNav = document.querySelectorAll('.header-nav');
 
 window.addEventListener('scroll', function () {
@@ -27,7 +27,7 @@ window.addEventListener('scroll', function () {
     bottomMenu.classList.remove('scroll-border')
     headerContainer.classList.remove('scroll-background');
     authorName.classList.remove('scroll-author-title');
-    phoneNumber.classList.remove('scroll-author-title')
+    phoneNumber.classList.remove('scroll-nav')
     headerNav.forEach((e)=>{
       e.classList.remove('scroll-author-title');
     })
