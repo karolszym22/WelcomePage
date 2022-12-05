@@ -187,7 +187,7 @@
 }
 
 .scroll-nav.contact {
-  color: #b3adad !important;
+  color: #901212 !important;
   -webkit-animation: none;
           animation: none;
 }
@@ -434,6 +434,15 @@ header .header-container .right-side .top-menu .contact-nav {
           animation-delay: 3.5s;
 }
 
+header .header-container .right-side .top-menu .contact-nav:hover > a {
+  color: orange;
+}
+
+header .header-container .right-side .top-menu .contact-nav:hover > span:nth-child(4n) {
+  background: -webkit-gradient(linear, left top, right top, from(#171618), to(#ffffff));
+  background: linear-gradient(to right, #171618, #ffffff);
+}
+
 header .header-container .right-side .top-menu .contact-nav span:nth-child(1) {
   position: absolute;
   top: 0;
@@ -502,11 +511,8 @@ header .header-container .right-side .top-menu .contact-nav a {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  color: white;
   cursor: pointer;
-}
-
-header .header-container .right-side .top-menu .contact-nav a:hover {
-  color: orange;
 }
 
 header .header-container .right-side .bottom-menu {

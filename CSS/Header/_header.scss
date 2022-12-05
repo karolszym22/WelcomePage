@@ -83,7 +83,12 @@ header {
           animation: navs-animation 2s ease-out;
           animation-fill-mode: forwards;
           animation-delay: 3.5s;
-          
+          &:hover > a {
+            color: orange;
+          }
+          &:hover > span:nth-child(4n){
+            background: linear-gradient(to right, #171618, #ffffff);
+          }
           span:nth-child(1) {
             position: absolute;
             top: 0;
@@ -135,11 +140,8 @@ header {
             justify-content: center;
             align-items: center;
             text-decoration: none;
+            color: white;
             cursor: pointer;
-
-            &:hover {
-              color: orange
-            }
           }
 
         }
