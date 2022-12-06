@@ -40,10 +40,12 @@ header {
         animation-fill-mode: forwards;
         animation-delay: 0.3s;
         text-decoration: none;
+        
       }
 
       .author-lastname {
         color: rgb(244, 133, 15);
+        
       }
     }
 
@@ -85,9 +87,7 @@ header {
           animation-delay: 3.5s;
           &:hover > a {
             color: orange;
-          }
-          &:hover > span:nth-child(4n){
-            background: linear-gradient(to right, #171618, #ffffff);
+            transition: background-color 270ms ease-in-out;
           }
           span:nth-child(1) {
             position: absolute;
@@ -142,6 +142,7 @@ header {
             text-decoration: none;
             color: white;
             cursor: pointer;
+            
           }
 
         }

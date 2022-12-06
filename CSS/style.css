@@ -188,8 +188,6 @@
 
 .scroll-nav.contact {
   color: #901212 !important;
-  -webkit-animation: none;
-          animation: none;
 }
 
 .scroll-border {
@@ -436,11 +434,8 @@ header .header-container .right-side .top-menu .contact-nav {
 
 header .header-container .right-side .top-menu .contact-nav:hover > a {
   color: orange;
-}
-
-header .header-container .right-side .top-menu .contact-nav:hover > span:nth-child(4n) {
-  background: -webkit-gradient(linear, left top, right top, from(#171618), to(#ffffff));
-  background: linear-gradient(to right, #171618, #ffffff);
+  -webkit-transition: background-color 270ms ease-in-out;
+  transition: background-color 270ms ease-in-out;
 }
 
 header .header-container .right-side .top-menu .contact-nav span:nth-child(1) {
