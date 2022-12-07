@@ -7,9 +7,10 @@ const colors = ['orange', 'blue']
 const headerContainer = document.querySelector('header')
 const authorName = document.querySelector('.author-name');
 const bottomMenu = document.querySelector('.bottom-menu');
+const contactNav = document.querySelector('.contact-nav');
 const phoneNumber = document.querySelector('.contact');
 const headerNav = document.querySelectorAll('.header-nav');
-
+const contactSpan = document.querySelectorAll('.contact-span')
 window.addEventListener('scroll', function () {
 
   const scrollFromTop = window.pageYOffset
@@ -19,8 +20,12 @@ window.addEventListener('scroll', function () {
     headerContainer.classList.add('scroll-background');
     authorName.classList.add('scroll-author-title');
     phoneNumber.classList.add('scroll-nav')
+    contactNav.classList.add('scroll-nav-border')
     headerNav.forEach((e)=>{
       e.classList.add('scroll-nav');
+    })
+    contactSpan.forEach((e)=>{
+      e.classList.add('scroll-nav-contact-nav');
     })
   }else
   {
@@ -30,6 +35,9 @@ window.addEventListener('scroll', function () {
     phoneNumber.classList.remove('scroll-nav')
     headerNav.forEach((e)=>{
       e.classList.remove('scroll-author-title');
+    })
+    contactSpan.forEach((e)=>{
+      e.classList.remove('scroll-nav-contact-nav');
     })
   }
 
