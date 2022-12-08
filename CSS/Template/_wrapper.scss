@@ -152,6 +152,9 @@
 }
 .scroll-nav-contact-nav
 {
+  //animation-delay: 5s;
+  //animation-fill-mode: forwards;
+  //opacity: 0;
   display: none;
 }
 .scroll-border {
@@ -160,7 +163,7 @@
   transition: background-color 270ms ease-in-out;
 }
 .scroll-nav-border{
- border: 1px solid black;
+ border: 1px solid rgba(179, 173, 173, 0.816) 
 }
 
 
@@ -222,5 +225,54 @@
 
   100% {
     transform: translateY(-100%);
+  }
+}
+
+
+@keyframes animate-alternative-1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(50%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes animate-alternative-2 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes animate-alternative-3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes animate-alternative-4{
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+    opacity: 1;
   }
 }
