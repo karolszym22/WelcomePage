@@ -5,6 +5,7 @@ const contactNav = document.querySelector(".contact-nav");
 const phoneNumber = document.querySelector(".contact");
 const headerNav = document.querySelectorAll(".header-nav");
 const contactSpan = document.querySelectorAll(".contact-span");
+const informationTittle = document.querySelector('.information-title')
 window.addEventListener("scroll", function () {
   const scrollFromTop = window.pageYOffset;
   if (scrollFromTop > 50) {
@@ -13,6 +14,8 @@ window.addEventListener("scroll", function () {
     authorName.classList.add("scroll-author-title");
     phoneNumber.classList.add("scroll-nav");
     contactNav.classList.add("scroll-nav-border");
+    informationTittle.classList.add("scroll-information-tittle")
+    
     headerNav.forEach((e) => {
       e.classList.add("scroll-nav");
     });
@@ -25,6 +28,7 @@ window.addEventListener("scroll", function () {
     authorName.classList.remove("scroll-author-title");
     phoneNumber.classList.remove("scroll-nav");
     contactNav.classList.remove("scroll-nav-border");
+    informationTittle.classList.remove("scroll-information-tittle")
     headerNav.forEach((e) => {
       e.classList.remove("scroll-author-title");
     });

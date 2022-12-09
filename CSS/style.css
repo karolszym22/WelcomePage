@@ -15,7 +15,6 @@
   height: 100vh;
   background-image: url("../../Assets/Images/background.svg");
   position: relative;
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,8 +23,8 @@
   -webkit-animation-name: pictures;
           animation-name: pictures;
   animation-direction: alternate-reverse;
-  -webkit-animation-duration: 25s;
-          animation-duration: 25s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-play-state: running;
@@ -68,6 +67,12 @@
   background-color: #ffffff;
   padding: 10px 7.5px;
   max-width: 600px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e67e00), color-stop(50%, white));
+  background: linear-gradient(to right, #e67e00 50%, white 50%);
+  background-position: right bottom;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+  background-size: 200% 100%;
 }
 
 @media only screen and (max-width: 780px) {
@@ -135,7 +140,7 @@
 }
 
 .main-wrapper .top-background .information-container .github-button a:hover {
-  background-color: orange;
+  background-color: #ffcc00;
   color: white;
 }
 
@@ -143,11 +148,8 @@
   0% {
     background-image: url("/Assets//Images/header_image_1920.jpg");
   }
-  50% {
-    background-image: url("/Assets//Images//altumcode-XMFZqrGyV-Q-unsplash.jpg");
-  }
   100% {
-    background-image: url("/Assets//Images//computer-1209641_1920.jpg");
+    background-image: url("/Assets//Images//altumcode-XMFZqrGyV-Q-unsplash.jpg");
   }
 }
 
@@ -155,11 +157,8 @@
   0% {
     background-image: url("/Assets//Images/header_image_1920.jpg");
   }
-  50% {
-    background-image: url("/Assets//Images//altumcode-XMFZqrGyV-Q-unsplash.jpg");
-  }
   100% {
-    background-image: url("/Assets//Images//computer-1209641_1920.jpg");
+    background-image: url("/Assets//Images//altumcode-XMFZqrGyV-Q-unsplash.jpg");
   }
 }
 
@@ -203,6 +202,11 @@
 
 .scroll-nav-border {
   border: 1px solid rgba(179, 173, 173, 0.816);
+}
+
+.scroll-information-tittle {
+  background-position: left bottom !important;
+  color: white !important;
 }
 
 @-webkit-keyframes example {

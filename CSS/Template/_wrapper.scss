@@ -9,7 +9,6 @@
     height: 100vh;
     background-image: url("../../Assets/Images/background.svg");
     position: relative;
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +16,7 @@
     color: #ffffff;
     animation-name: pictures;
     animation-direction: alternate-reverse;
-    animation-duration: 25s;
+    animation-duration: 10s;
 
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -48,10 +47,14 @@
         background-color: #ffffff;
         padding: 10px 7.5px;
         max-width: 600px;
-
+        background: linear-gradient(to right, rgb(230, 126, 0) 50%, white 50%);
+        background-position: right bottom;
+        transition: all .15s ease-out;
+        background-size: 200% 100%;
         @media only screen and (max-width: 780px) {
           font-size: 30px;
         }
+
       }
 
       .information-description {
@@ -99,7 +102,7 @@
           cursor: pointer;
 
           &:hover {
-            background-color: orange;
+            background-color: rgb(255, 204, 0);
             color: white;
           }
 
@@ -114,12 +117,8 @@
     background-image: url("/Assets//Images/header_image_1920.jpg");
   }
 
-  50% {
-    background-image: url("/Assets//Images//altumcode-XMFZqrGyV-Q-unsplash.jpg");
-  }
-
   100% {
-    background-image: url("/Assets//Images//computer-1209641_1920.jpg");
+    background-image: url("/Assets//Images//altumcode-XMFZqrGyV-Q-unsplash.jpg");
   }
 }
 
@@ -165,7 +164,10 @@
 .scroll-nav-border{
  border: 1px solid rgba(179, 173, 173, 0.816) 
 }
-
+.scroll-information-tittle{
+  background-position: left bottom!important;
+  color: white!important;
+}
 
 
 @keyframes example {
