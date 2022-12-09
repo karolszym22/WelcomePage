@@ -167,6 +167,8 @@
   opacity: 0.95;
   -webkit-transition: background-color 270ms ease-in-out;
   transition: background-color 270ms ease-in-out;
+  -webkit-box-shadow: 0px 5px 9px -9px #42445a;
+  box-shadow: 0px 5px 9px -9px #42445a;
 }
 
 .scroll-font {
