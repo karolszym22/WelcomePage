@@ -2,17 +2,35 @@
   height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
-}
-.my-skills{
-  width: 45%;
-  max-width: 700px;
-  min-width: 260px;
-  text-align: center;
-  font-weight: bolder;
-  margin-top: 90px;
-  span{
-    background-color: orange;
-    color: white;
+  flex-direction: column;
+  align-items: center;
+  .my-skills{
+    width: 45%;
+    max-width: 700px;
+    min-width: 260px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 90px;
+    span{
+      background-color: orange;
+      color: white;
+    }
+  }
+  .skills-article{
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .skills-article-image{
+      background-image: url('../../Assets/Icons/laptop-g93c7db1b2_1280.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 800px;
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
+

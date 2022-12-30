@@ -721,12 +721,16 @@ header .header-container .right-side .bottom-menu li::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.my-skills {
+.main .my-skills {
   width: 45%;
   max-width: 700px;
   min-width: 260px;
@@ -735,9 +739,38 @@ header .header-container .right-side .bottom-menu li::after {
   margin-top: 90px;
 }
 
-.my-skills span {
+.main .my-skills span {
   background-color: orange;
   color: white;
+}
+
+.main .skills-article {
+  width: 100%;
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .skills-article .skills-article-image {
+  background-image: url("../../Assets/Icons/laptop-g93c7db1b2_1280.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 800px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
