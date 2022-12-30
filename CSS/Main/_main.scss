@@ -18,7 +18,7 @@
   }
   .skills-article{
     width: 100%;
-    padding-top: 80px;
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,10 +27,25 @@
       background-repeat: no-repeat;
       background-size: contain;
       height: 800px;
-      width: 40%;
       display: flex;
       justify-content: center;
+      animation: show-background-image 1s ease-out;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      animation-delay: 1.2s;
     }
+  }
+}
+
+@keyframes show-background-image{
+  0% {
+    opacity: 0;
+    width: 25%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 35%;
   }
 }
 

@@ -746,7 +746,7 @@ header .header-container .right-side .bottom-menu li::after {
 
 .main .skills-article {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,13 +764,41 @@ header .header-container .right-side .bottom-menu li::after {
   background-repeat: no-repeat;
   background-size: contain;
   height: 800px;
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: show-background-image 1s ease-out;
+          animation: show-background-image 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+@-webkit-keyframes show-background-image {
+  0% {
+    opacity: 0;
+    width: 25%;
+  }
+  100% {
+    opacity: 1;
+    width: 35%;
+  }
+}
+
+@keyframes show-background-image {
+  0% {
+    opacity: 0;
+    width: 25%;
+  }
+  100% {
+    opacity: 1;
+    width: 35%;
+  }
 }
 
 * {
