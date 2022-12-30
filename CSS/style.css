@@ -42,9 +42,10 @@
 
 .main-wrapper .top-background .information-container {
   display: none;
-  position: absolute;
+  position: relative;
   top: 40%;
   left: 10%;
+  padding-right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,6 +61,7 @@
   opacity: 0;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
+  padding-bottom: 50px;
 }
 
 .main-wrapper .top-background .information-container .information-title {
@@ -714,6 +716,7 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 .main {
+  height: 100vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,16 +726,16 @@ header .header-container .right-side .bottom-menu li::after {
           justify-content: center;
 }
 
-.user-projects {
+.my-skills {
   width: 45%;
   max-width: 700px;
   min-width: 260px;
   text-align: center;
   font-weight: bolder;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
-.user-projects span {
+.my-skills span {
   background-color: orange;
   color: white;
 }
