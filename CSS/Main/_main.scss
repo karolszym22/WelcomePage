@@ -1,4 +1,17 @@
-main {
-  height: 1000px;
+.main {
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+.user-projects{
+  width: 45%;
+  max-width: 700px;
+  min-width: 260px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  span{
+    background-color: orange;
+    color: white;
+  }
 }

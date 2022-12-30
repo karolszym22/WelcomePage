@@ -713,9 +713,28 @@ header .header-container .right-side .bottom-menu li::after {
   }
 }
 
-main {
-  height: 1000px;
+.main {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-projects {
+  width: 45%;
+  max-width: 700px;
+  min-width: 260px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.user-projects span {
+  background-color: orange;
+  color: white;
 }
 
 * {
