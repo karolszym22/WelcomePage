@@ -1,15 +1,16 @@
 .main {
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
 }
-.user-projects{
+.my-skills{
   width: 45%;
   max-width: 700px;
   min-width: 260px;
   text-align: center;
   font-weight: bolder;
-  margin-top: 50px;
+  margin-top: 90px;
   span{
     background-color: orange;
     color: white;
