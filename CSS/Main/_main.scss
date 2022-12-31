@@ -26,13 +26,14 @@
       background-image: url('../../Assets/Icons/laptop-g93c7db1b2_1280.png');
       background-repeat: no-repeat;
       background-size: contain;
-      height: 800px;
       display: flex;
       justify-content: center;
-      animation: show-background-image 1s ease-out;
+      animation: show-background-image 1.7s ease-out;
       animation-fill-mode: forwards;
       opacity: 0;
-      animation-delay: 1.2s;
+      background-position: center;
+      height: 400px;
+      animation-delay: 5s;
     }
   }
 }
@@ -41,6 +42,7 @@
   0% {
     opacity: 0;
     width: 25%;
+   
   }
 
   100% {
