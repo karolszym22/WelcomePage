@@ -737,7 +737,7 @@ header .header-container .right-side .bottom-menu li::after {
   min-width: 260px;
   text-align: center;
   font-weight: bolder;
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 .main .my-skills span {
@@ -770,25 +770,112 @@ header .header-container .right-side .bottom-menu li::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: show-background-image 1.7s ease-out;
-          animation: show-background-image 1.7s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  opacity: 0;
   background-position: center;
   height: 400px;
+  width: 40%;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
+}
+
+.main .skills-article .skills-article-image .image-presentation-container {
+  position: relative;
+  height: 30%;
+  width: 25%;
+  bottom: -170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: gray;
+}
+
+.main .skills-article .skills-article-image .image-presentation-container .presentation-header {
+  width: 100%;
+  height: 15px;
+  border: 1px solid #d0cccc;
+  color: gray;
+  font-size: 9px;
+  text-align: center;
+}
+
+.main .skills-article .skills-article-image .image-presentation-container .presentation-nav {
+  width: 100%;
+  height: 15px;
+  border: 1px solid #d0cccc;
+  color: gray;
+  font-size: 9px;
+  margin: 1px 0px;
+  text-align: center;
+}
+
+.main .skills-article .skills-article-image .image-presentation-container .presentation-main {
+  margin: 1px 0px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #d0cccc;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 9px;
+  text-align: center;
+}
+
+.main .skills-article .skills-article-image .image-presentation-container .presentation-main-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .skills-article .skills-article-image .image-presentation-container .presentation-main-table {
+  width: 35%;
+  height: 95%;
+  border: 1px solid #d0cccc;
+  margin: 0px 10px;
+}
+
+.main .skills-article .skills-article-image .image-presentation-container .presentation-main-aside {
+  width: 20%;
+  height: 95%;
+  border: 1px solid #d0cccc;
+  margin: 0px 5px;
+}
+
+.main .skills-article .skills-article-image .presentation-main-footer {
+  width: 100%;
+  height: 15px;
+  border: 1px solid #d0cccc;
+  color: gray;
+  font-size: 9px;
+  margin: 1px 0px;
+  text-align: center;
 }
 
 @-webkit-keyframes show-background-image {
   0% {
     opacity: 0;
     width: 25%;
+    width: 35%;
   }
   100% {
     opacity: 1;
-    width: 35%;
   }
 }
 
@@ -796,10 +883,10 @@ header .header-container .right-side .bottom-menu li::after {
   0% {
     opacity: 0;
     width: 25%;
+    width: 35%;
   }
   100% {
     opacity: 1;
-    width: 35%;
   }
 }
 
