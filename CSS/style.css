@@ -760,30 +760,29 @@ header .header-container .right-side .bottom-menu li::after {
           align-items: center;
 }
 
-.main .skills-article .skills-article-image {
-  background-image: url("../../Assets/Icons/laptop-g93c7db1b2_1280.png");
+.main .skills-article .skills-article-container {
   background-repeat: no-repeat;
-  background-size: contain;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  background-position: center;
-  height: 400px;
-  width: 40%;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
 }
 
-.main .skills-article .skills-article-image .image-presentation-container {
+.main .skills-article .skills-article-container .presentation-image {
+  width: 60%;
+  height: auto;
+}
+
+.main .skills-article .skills-article-container .presentation-container {
   position: relative;
-  height: 30%;
+  left: -50%;
   width: 25%;
-  bottom: -170px;
+  top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,7 +796,7 @@ header .header-container .right-side .bottom-menu li::after {
   color: gray;
 }
 
-.main .skills-article .skills-article-image .image-presentation-container .presentation-header {
+.main .skills-article .skills-article-container .presentation-container .presentation-header {
   width: 100%;
   height: 15px;
   border: 1px solid #d0cccc;
@@ -806,7 +805,7 @@ header .header-container .right-side .bottom-menu li::after {
   text-align: center;
 }
 
-.main .skills-article .skills-article-image .image-presentation-container .presentation-nav {
+.main .skills-article .skills-article-container .presentation-container .presentation-nav {
   width: 100%;
   height: 15px;
   border: 1px solid #d0cccc;
@@ -816,7 +815,7 @@ header .header-container .right-side .bottom-menu li::after {
   text-align: center;
 }
 
-.main .skills-article .skills-article-image .image-presentation-container .presentation-main {
+.main .skills-article .skills-article-container .presentation-container .presentation-main {
   margin: 1px 0px;
   height: 50px;
   width: 100%;
@@ -833,7 +832,7 @@ header .header-container .right-side .bottom-menu li::after {
   text-align: center;
 }
 
-.main .skills-article .skills-article-image .image-presentation-container .presentation-main-container {
+.main .skills-article .skills-article-container .presentation-container .presentation-main-container {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -844,21 +843,21 @@ header .header-container .right-side .bottom-menu li::after {
           justify-content: space-between;
 }
 
-.main .skills-article .skills-article-image .image-presentation-container .presentation-main-table {
+.main .skills-article .skills-article-container .presentation-container .presentation-main-table {
   width: 35%;
   height: 95%;
   border: 1px solid #d0cccc;
   margin: 0px 10px;
 }
 
-.main .skills-article .skills-article-image .image-presentation-container .presentation-main-aside {
+.main .skills-article .skills-article-container .presentation-container .presentation-main-aside {
   width: 20%;
   height: 95%;
   border: 1px solid #d0cccc;
   margin: 0px 5px;
 }
 
-.main .skills-article .skills-article-image .presentation-main-footer {
+.main .skills-article .skills-article-container .presentation-main-footer {
   width: 100%;
   height: 15px;
   border: 1px solid #d0cccc;
