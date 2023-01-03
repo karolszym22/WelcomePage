@@ -761,28 +761,28 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 .main .skills-article .skills-article-container {
+  background-image: url("../../Assets/Icons/laptop-g93c7db1b2_1280.png");
   background-repeat: no-repeat;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.main .skills-article .skills-article-container .presentation-image {
-  width: 60%;
-  height: auto;
+  background-position: center;
+  background-size: contain;
+  height: 360px;
+  width: 25%;
+  min-width: 270px;
+  max-width: 410px;
 }
 
 .main .skills-article .skills-article-container .presentation-container {
   position: relative;
-  left: -50%;
-  width: 25%;
-  top: 200px;
+  width: 40%;
+  top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,18 +796,38 @@ header .header-container .right-side .bottom-menu li::after {
   color: gray;
 }
 
+@media only screen and (max-width: 1250px) {
+  .main .skills-article .skills-article-container .presentation-container {
+    margin-top: 4px;
+  }
+}
+
 .main .skills-article .skills-article-container .presentation-container .presentation-header {
   width: 100%;
-  height: 15px;
+  height: 4%;
   border: 1px solid #d0cccc;
   color: gray;
   font-size: 9px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-header {
+    height: 3%;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-header {
+    height: 2.5%;
+    font-size: 7px;
+  }
 }
 
 .main .skills-article .skills-article-container .presentation-container .presentation-nav {
   width: 100%;
-  height: 15px;
+  height: 4%;
   border: 1px solid #d0cccc;
   color: gray;
   font-size: 9px;
@@ -815,9 +835,23 @@ header .header-container .right-side .bottom-menu li::after {
   text-align: center;
 }
 
+@media only screen and (max-width: 1400px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-nav {
+    height: 3%;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-nav {
+    height: 2.5%;
+    font-size: 7px;
+  }
+}
+
 .main .skills-article .skills-article-container .presentation-container .presentation-main {
   margin: 1px 0px;
-  height: 50px;
+  height: 13%;
   width: 100%;
   border: 1px solid #d0cccc;
   color: gray;
@@ -830,6 +864,20 @@ header .header-container .right-side .bottom-menu li::after {
           flex-direction: column;
   font-size: 9px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-main {
+    height: 12%;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-main {
+    height: 11%;
+    font-size: 7px;
+  }
 }
 
 .main .skills-article .skills-article-container .presentation-container .presentation-main-container {
@@ -850,6 +898,20 @@ header .header-container .right-side .bottom-menu li::after {
   margin: 0px 10px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-main-table {
+    width: 30%;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-main-table {
+    width: 25%;
+    font-size: 7px;
+  }
+}
+
 .main .skills-article .skills-article-container .presentation-container .presentation-main-aside {
   width: 20%;
   height: 95%;
@@ -857,13 +919,27 @@ header .header-container .right-side .bottom-menu li::after {
   margin: 0px 5px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .main .skills-article .skills-article-container .presentation-container .presentation-main-aside {
+    width: 20%;
+    font-size: 8px;
+  }
+}
+
 .main .skills-article .skills-article-container .presentation-main-footer {
+  margin: 1px 0px;
+  height: 4%;
   width: 100%;
-  height: 15px;
   border: 1px solid #d0cccc;
   color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 9px;
-  margin: 1px 0px;
   text-align: center;
 }
 
