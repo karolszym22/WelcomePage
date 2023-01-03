@@ -794,6 +794,7 @@ header .header-container .right-side .bottom-menu li::after {
       -ms-flex-align: center;
           align-items: center;
   color: gray;
+  font-family: 'Amatic SC', cursive;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -809,6 +810,13 @@ header .header-container .right-side .bottom-menu li::after {
   color: gray;
   font-size: 9px;
   text-align: center;
+  -webkit-animation: presentation-childs 1s ease-out;
+          animation: presentation-childs 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -833,6 +841,13 @@ header .header-container .right-side .bottom-menu li::after {
   font-size: 9px;
   margin: 1px 0px;
   text-align: center;
+  -webkit-animation: presentation-childs 5s ease-out;
+          animation: presentation-childs 5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -864,6 +879,13 @@ header .header-container .right-side .bottom-menu li::after {
           flex-direction: column;
   font-size: 9px;
   text-align: center;
+  -webkit-animation: presentation-childs 5s ease-out;
+          animation: presentation-childs 5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -896,6 +918,13 @@ header .header-container .right-side .bottom-menu li::after {
   height: 95%;
   border: 1px solid #d0cccc;
   margin: 0px 10px;
+  -webkit-animation: presentation-childs 5s ease-out;
+          animation: presentation-childs 5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -917,6 +946,15 @@ header .header-container .right-side .bottom-menu li::after {
   height: 95%;
   border: 1px solid #d0cccc;
   margin: 0px 5px;
+  -webkit-animation: presentation-childs 5s ease-out;
+          animation: presentation-childs 5s ease-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -941,6 +979,13 @@ header .header-container .right-side .bottom-menu li::after {
           flex-direction: column;
   font-size: 9px;
   text-align: center;
+  -webkit-animation: presentation-childs 5s ease-out;
+          animation: presentation-childs 5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
 }
 
 @-webkit-keyframes show-background-image {
@@ -961,6 +1006,24 @@ header .header-container .right-side .bottom-menu li::after {
     width: 35%;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes presentation-childs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes presentation-childs {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }

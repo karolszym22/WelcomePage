@@ -47,6 +47,7 @@
         flex-direction: column;
         align-items: center;
         color: gray;
+        font-family: 'Amatic SC', cursive;
         @media only screen and (max-width: 1250px) {
           margin-top: 4px;
         }
@@ -57,6 +58,10 @@
           color: gray;
           font-size: 9px;
           text-align: center;
+          animation: presentation-childs 1s ease-out;
+          animation-fill-mode: forwards;
+          animation-delay: 1s;
+          opacity: 0;
           @media only screen and (max-width: 1400px) {
             height: 3%;
             font-size: 8px;
@@ -74,6 +79,10 @@
           font-size: 9px;
           margin: 1px 0px;
           text-align: center;
+          animation: presentation-childs 5s ease-out;
+          animation-fill-mode: forwards;
+          animation-delay: 1.5s;
+          opacity: 0;
           @media only screen and (max-width: 1400px) {
             height: 3%;
             font-size: 8px;
@@ -93,6 +102,10 @@
           flex-direction: column;
           font-size: 9px;
           text-align: center;
+          animation: presentation-childs 5s ease-out;
+          animation-fill-mode: forwards;
+          animation-delay: 2s;
+          opacity: 0;
           @media only screen and (max-width: 1400px) {
             height: 12%;
             font-size: 8px;
@@ -114,6 +127,10 @@
           height: 95%;
           border: 1px solid rgb(208, 204, 204);
           margin: 0px 10px;
+          animation: presentation-childs 5s ease-out;
+          animation-fill-mode: forwards;
+          animation-delay: 2.5s;
+          opacity: 0;
           @media only screen and (max-width: 1400px) {
             width: 30%;
             font-size: 8px;
@@ -128,6 +145,11 @@
           height: 95%;
           border: 1px solid rgb(208, 204, 204);
           margin: 0px 5px;
+          animation: presentation-childs 5s ease-out;
+          animation-delay: 2s;
+          animation-fill-mode: forwards;
+          animation-delay: 2.5s;
+          opacity: 0;
           @media only screen and (max-width: 1400px) {
             width: 20%;
             font-size: 8px;
@@ -144,7 +166,13 @@
           flex-direction: column;
           font-size: 9px;
           text-align: center;
+          animation: presentation-childs 5s ease-out;
+          animation-fill-mode: forwards;
+          animation-delay: 1s;
+          opacity: 0;
+          
       }
+      
     }
   }
 }
@@ -161,4 +189,16 @@
     
   }
 }
+
+@keyframes presentation-childs{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
 
