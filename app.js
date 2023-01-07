@@ -1,3 +1,6 @@
+import StartPresentation from "./js/Presentation.js";
+//sprawdza pozycję dopiero jak scrolluje - do poprawy
+
 const headerContainer = document.querySelector("header");
 const authorName = document.querySelector(".author-name");
 const bottomMenu = document.querySelector(".bottom-menu");

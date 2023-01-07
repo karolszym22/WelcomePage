@@ -156,7 +156,7 @@
           }
         }
       }
-      .presentation-main-footer{
+      .presentation-footer{
         margin: 1px 0px;
           height: 4%;
           width: 100%;
@@ -166,26 +166,54 @@
           flex-direction: column;
           font-size: 9px;
           text-align: center;
-          animation: presentation-childs 5s ease-out;
-          animation-fill-mode: forwards;
-          animation-delay: 1s;
+          background-color: transparent;
+          animation: presentation-childs 2s ease-out;
+          //animation-fill-mode: forwards;
+          //animation-delay: 1s;
           opacity: 0;
           
+          
+          &.third-animation{
+             
+           animation: third-animation 2s ease-out;
+           animation-fill-mode: forwards;
+            //animation-delay: 1s;
+            //color: yellow;
+          }
+          &.second-animation{
+           // animation: second-animation 2s ease-out;
+            animation-fill-mode: forwards;
+            //animation-delay: 1s;
+            //color: red;
+          }
       }
       
     }
   }
 }
 
-@keyframes show-background-image{
+@keyframes second-animation{
   0% {
-    opacity: 0;
-    width: 25%;width: 35%;
+    background-color: rgb(83, 82, 82);
    
   }
 
   100% {
+    background-color: rgb(224, 19, 19);
+    
+    
+  }
+}
+@keyframes third-animation{
+  0% {
+      opacity: 1;
+   }
+
+  100% {   
     opacity: 1;
+    background-color: rgb(89, 88, 88);
+    border-radius: 5px;
+    color: white;
     
   }
 }
@@ -199,6 +227,4 @@
     opacity: 1;
   }
 }
-
-
 

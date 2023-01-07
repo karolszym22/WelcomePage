@@ -964,7 +964,7 @@ header .header-container .right-side .bottom-menu li::after {
   }
 }
 
-.main .skills-article .skills-article-container .presentation-main-footer {
+.main .skills-article .skills-article-container .presentation-footer {
   margin: 1px 0px;
   height: 4%;
   width: 100%;
@@ -979,34 +979,63 @@ header .header-container .right-side .bottom-menu li::after {
           flex-direction: column;
   font-size: 9px;
   text-align: center;
-  -webkit-animation: presentation-childs 5s ease-out;
-          animation: presentation-childs 5s ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  background-color: transparent;
+  -webkit-animation: presentation-childs 2s ease-out;
+          animation: presentation-childs 2s ease-out;
   opacity: 0;
 }
 
-@-webkit-keyframes show-background-image {
+.main .skills-article .skills-article-container .presentation-footer.third-animation {
+  -webkit-animation: third-animation 2s ease-out;
+          animation: third-animation 2s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main .skills-article .skills-article-container .presentation-footer.second-animation {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes second-animation {
   0% {
-    opacity: 0;
-    width: 25%;
-    width: 35%;
+    background-color: #535252;
   }
   100% {
-    opacity: 1;
+    background-color: #e01313;
   }
 }
 
-@keyframes show-background-image {
+@keyframes second-animation {
   0% {
-    opacity: 0;
-    width: 25%;
-    width: 35%;
+    background-color: #535252;
+  }
+  100% {
+    background-color: #e01313;
+  }
+}
+
+@-webkit-keyframes third-animation {
+  0% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
+    background-color: #595858;
+    border-radius: 5px;
+    color: white;
+  }
+}
+
+@keyframes third-animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    background-color: #595858;
+    border-radius: 5px;
+    color: white;
   }
 }
 
