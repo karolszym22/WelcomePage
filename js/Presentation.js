@@ -27,6 +27,7 @@ const StartPresentation = () =>{
           presentationNav.classList.remove(animationArray[n]);
           presentationFooter.classList.remove(animationArray[n]);
           presentationMain.classList.remove(animationArray[n]);
+          presentationNav.classList.add(animationArray[n - 1]);
           presentationHeader.classList.add(animationArray[n - 1]);
           presentationFooter.classList.add(animationArray[n - 1]);
           presentationMain.classList.add(animationArray[n - 1]);
@@ -34,7 +35,7 @@ const StartPresentation = () =>{
         }
     
         recursiveFunction(n - 1);
-      }, 5000);
+      }, 4000);
     }
     
     recursiveFunction(MAX_ANIMATIONS_NUMBER);

@@ -771,6 +771,8 @@ header .header-container .right-side .bottom-menu li::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: show-background-image 1.7s ease-out;
+          animation: show-background-image 1.7s ease-out;
   background-position: center;
   background-size: contain;
   height: 360px;
@@ -804,14 +806,16 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 .main .skills-article .skills-article-container .presentation-container .presentation-header {
+  margin-top: 1px;
+  margin-bottom: 1px;
   width: 100%;
   height: 4%;
   border: 1px solid #d0cccc;
   color: gray;
   font-size: 9px;
   text-align: center;
-  -webkit-animation: presentation-childs 4s ease-out;
-          animation: presentation-childs 4s ease-out;
+  -webkit-animation: presentation-childs 1s ease-out;
+          animation: presentation-childs 1s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
@@ -835,59 +839,81 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 .main .skills-article .skills-article-container .presentation-container .presentation-header.third-animation {
-  -webkit-animation: header-third-animation 1s ease-out;
-          animation: header-third-animation 1s ease-out;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
   opacity: 1;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  background-color: rgba(255, 166, 0, 0.316);
+  color: transparent;
+  -webkit-animation: third-animation 1s ease-out;
+          animation: third-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.main .skills-article .skills-article-container .presentation-container .presentation-nav {
+.main .skills-article .skills-article-container .presentation-container .presentation-header.second-animation {
+  opacity: 1;
+}
+
+.main .skills-article .skills-article-container .presentation-nav {
   width: 100%;
   height: 4%;
   border: 1px solid #d0cccc;
   color: gray;
   font-size: 9px;
-  margin: 1px 0px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   text-align: center;
-  -webkit-animation: presentation-childs 3s ease-out;
-          animation: presentation-childs 3s ease-out;
+  -webkit-animation: presentation-childs 1s ease-out;
+          animation: presentation-childs 1s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   opacity: 0;
   background-color: white;
 }
 
 @media only screen and (max-width: 1400px) {
-  .main .skills-article .skills-article-container .presentation-container .presentation-nav {
+  .main .skills-article .skills-article-container .presentation-nav {
     height: 3%;
     font-size: 8px;
   }
 }
 
 @media only screen and (max-width: 1250px) {
-  .main .skills-article .skills-article-container .presentation-container .presentation-nav {
+  .main .skills-article .skills-article-container .presentation-nav {
     height: 2.5%;
     font-size: 7px;
   }
 }
 
-.main .skills-article .skills-article-container .presentation-container .presentation-nav.third-animation {
-  -webkit-animation: nav-third-animation 3s ease-out;
-          animation: nav-third-animation 3s ease-out;
+.main .skills-article .skills-article-container .presentation-nav.third-animation {
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
   opacity: 1;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  background-color: rgba(234, 18, 47, 0.344);
+  color: transparent;
+  -webkit-animation: nav-animation 1s ease-out;
+          animation: nav-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.main .skills-article .skills-article-container .presentation-container .presentation-main {
-  margin: 1px 0px;
+.main .skills-article .skills-article-container .presentation-nav.second-animation {
+  opacity: 1;
+}
+
+.main .skills-article .skills-article-container .presentation-main {
+  margin-top: 1px;
+  margin-bottom: 1px;
   height: 13%;
   width: 100%;
   border: 1px solid #d0cccc;
@@ -901,41 +927,60 @@ header .header-container .right-side .bottom-menu li::after {
           flex-direction: column;
   font-size: 9px;
   text-align: center;
-  -webkit-animation: presentation-childs 2s ease-out;
-          animation: presentation-childs 2s ease-out;
+  -webkit-animation: presentation-childs 1s ease-out;
+          animation: presentation-childs 1s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   opacity: 0;
   background-color: white;
 }
 
 @media only screen and (max-width: 1400px) {
-  .main .skills-article .skills-article-container .presentation-container .presentation-main {
+  .main .skills-article .skills-article-container .presentation-main {
     height: 12%;
     font-size: 8px;
   }
 }
 
-.main .skills-article .skills-article-container .presentation-container .presentation-main.third-animation {
-  -webkit-animation: main-third-animation 3s ease-out;
-          animation: main-third-animation 3s ease-out;
-  opacity: 1;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+.main .skills-article .skills-article-container .presentation-main a {
+  -webkit-animation: a-animation 1s ease-out;
+          animation: a-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
+.main .skills-article .skills-article-container .presentation-main.third-animation {
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  opacity: 1;
+  background-color: rgba(151, 16, 153, 0.316);
+  color: transparent;
+  -webkit-animation: main-animation 1s ease-out;
+          animation: main-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main .skills-article .skills-article-container .presentation-main.second-animation {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 1250px) {
-  .main .skills-article .skills-article-container .presentation-container .presentation-main {
+  .main .skills-article .skills-article-container .presentation-main {
     height: 11%;
     font-size: 7px;
   }
 }
 
-.main .skills-article .skills-article-container .presentation-container .presentation-main-container {
+.main .skills-article .skills-article-container .presentation-main-container {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -946,7 +991,7 @@ header .header-container .right-side .bottom-menu li::after {
           justify-content: space-between;
 }
 
-.main .skills-article .skills-article-container .presentation-container .presentation-main-table {
+.main .skills-article .skills-article-container .presentation-main-table {
   width: 35%;
   height: 95%;
   border: 1px solid #d0cccc;
@@ -955,32 +1000,41 @@ header .header-container .right-side .bottom-menu li::after {
           animation: presentation-childs 1s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
   opacity: 0;
 }
 
 @media only screen and (max-width: 1400px) {
-  .main .skills-article .skills-article-container .presentation-container .presentation-main-table {
+  .main .skills-article .skills-article-container .presentation-main-table {
     width: 30%;
     font-size: 8px;
   }
 }
 
 @media only screen and (max-width: 1250px) {
-  .main .skills-article .skills-article-container .presentation-container .presentation-main-table {
+  .main .skills-article .skills-article-container .presentation-main-table {
     width: 25%;
     font-size: 7px;
   }
 }
 
-.main .skills-article .skills-article-container .presentation-container .presentation-main-aside {
+.main .skills-article .skills-article-container .presentation-main-table a {
+  -webkit-animation: a-animation 1s ease-out;
+          animation: a-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main .skills-article .skills-article-container .presentation-main-aside {
   width: 20%;
   height: 95%;
   border: 1px solid #d0cccc;
   margin: 0px 5px;
-  -webkit-animation: presentation-childs 1.5s ease-out;
-          animation: presentation-childs 1.5s ease-out;
+  -webkit-animation: presentation-childs 1s ease-out;
+          animation: presentation-childs 1s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 3.5s;
@@ -989,14 +1043,24 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 @media only screen and (max-width: 1400px) {
-  .main .skills-article .skills-article-container .presentation-container .presentation-main-aside {
+  .main .skills-article .skills-article-container .presentation-main-aside {
     width: 20%;
     font-size: 8px;
   }
 }
 
-.main .skills-article .skills-article-container .presentation-footer {
-  margin: 1px 0px;
+.main .skills-article .skills-article-container .presentation-main-aside a {
+  -webkit-animation: a-animation 1s ease-out;
+          animation: a-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main .skills-article .presentation-footer {
+  margin-top: 1px;
+  margin-bottom: 1px;
   height: 4%;
   width: 100%;
   border: 1px solid #d0cccc;
@@ -1011,25 +1075,37 @@ header .header-container .right-side .bottom-menu li::after {
   font-size: 9px;
   text-align: center;
   background-color: transparent;
-  -webkit-animation: presentation-childs 3s ease-out;
-          animation: presentation-childs 3s ease-out;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation: presentation-childs 1s ease-out;
+          animation: presentation-childs 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   opacity: 0;
   background-color: white;
 }
 
-.main .skills-article .skills-article-container .presentation-footer.third-animation {
-  -webkit-animation: footer-third-animation 1s ease-out;
-          animation: footer-third-animation 1s ease-out;
-  opacity: 1;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+.main .skills-article .presentation-footer a {
+  -webkit-animation: a-animation 1s ease-out;
+          animation: a-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.main .skills-article .skills-article-container .presentation-footer.second-animation {
+.main .skills-article .presentation-footer.third-animation {
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-transition-delay: 2.5s;
+          transition-delay: 2.5s;
+  opacity: 1;
+  background-color: rgba(255, 145, 0, 0.389);
+  color: transparent;
+  -webkit-animation: third-animation 1s ease-out;
+          animation: third-animation 1s ease-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1052,41 +1128,59 @@ header .header-container .right-side .bottom-menu li::after {
   }
 }
 
-@-webkit-keyframes header-third-animation {
-  from {
-    opacity: 1;
-  }
-  to {
-    border: none;
-    background-color: rgba(104, 27, 116, 0.685);
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-    opacity: 1;
+@-webkit-keyframes third-animation {
+  100% {
+    border-radius: 3px;
+    border: 1px solid rgba(255, 166, 0, 0.316);
   }
 }
 
-@keyframes header-third-animation {
-  from {
-    opacity: 1;
+@keyframes third-animation {
+  100% {
+    border-radius: 3px;
+    border: 1px solid rgba(255, 166, 0, 0.316);
   }
-  to {
-    border: none;
-    background-color: rgba(104, 27, 116, 0.685);
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-    opacity: 1;
+}
+
+@-webkit-keyframes nav-animation {
+  100% {
+    border-radius: 3px;
+    border: 1px solid rgba(234, 18, 47, 0.204);
+  }
+}
+
+@keyframes nav-animation {
+  100% {
+    border-radius: 3px;
+    border: 1px solid rgba(234, 18, 47, 0.204);
+  }
+}
+
+@-webkit-keyframes main-animation {
+  100% {
+    border-radius: 3px;
+    border: 1px solid rgba(151, 16, 153, 0.162);
+    content: "";
+  }
+}
+
+@keyframes main-animation {
+  100% {
+    border-radius: 3px;
+    border: 1px solid rgba(151, 16, 153, 0.162);
+    content: "";
   }
 }
 
 @-webkit-keyframes nav-third-animation {
-  from {
-    opacity: 1;
-  }
-  to {
+  0% {
     border: none;
-    background-color: rgba(234, 137, 18, 0.685);
+    border-radius: 2px;
+    padding: 0.5px;
+  }
+  100% {
+    border: none;
+    background-color: rgba(234, 18, 47, 0.542);
     color: white;
     font-weight: bold;
     font-family: sans-serif;
@@ -1095,12 +1189,14 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 @keyframes nav-third-animation {
-  from {
-    opacity: 1;
-  }
-  to {
+  0% {
     border: none;
-    background-color: rgba(234, 137, 18, 0.685);
+    border-radius: 2px;
+    padding: 0.5px;
+  }
+  100% {
+    border: none;
+    background-color: rgba(234, 18, 47, 0.542);
     color: white;
     font-weight: bold;
     font-family: sans-serif;
@@ -1109,42 +1205,28 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 @-webkit-keyframes footer-third-animation {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
-    border: none;
-    background-color: rgba(255, 145, 0, 0.685);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    color: white;
+  100% {
     opacity: 1;
-    font-weight: bold;
-    font-family: sans-serif;
   }
 }
 
 @keyframes footer-third-animation {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
-    border: none;
-    background-color: rgba(255, 145, 0, 0.685);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    color: white;
+  100% {
     opacity: 1;
-    font-weight: bold;
-    font-family: sans-serif;
   }
 }
 
 @-webkit-keyframes main-third-animation {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     border: none;
     background-color: #7828c8a9;
     color: white;
@@ -1155,10 +1237,10 @@ header .header-container .right-side .bottom-menu li::after {
 }
 
 @keyframes main-third-animation {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     border: none;
     background-color: #7828c8a9;
     color: white;
@@ -1183,6 +1265,48 @@ header .header-container .right-side .bottom-menu li::after {
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes a-animation {
+  0% {
+    display: inline;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes a-animation {
+  0% {
+    display: inline;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@-webkit-keyframes stop-margin {
+  from {
+    margin: 1;
+    opacity: 1;
+  }
+  to {
+    margin: 0;
+    opacity: 1;
+    content: none;
+  }
+}
+
+@keyframes stop-margin {
+  from {
+    margin: 1;
+    opacity: 1;
+  }
+  to {
+    margin: 0;
+    opacity: 1;
+    content: none;
   }
 }
 
