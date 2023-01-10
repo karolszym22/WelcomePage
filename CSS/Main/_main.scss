@@ -58,13 +58,28 @@
           height: 4%;
           border: 1px solid rgb(208, 204, 204);
           color: gray;
-          font-size: 9px;
+          font-size: 10px;
           text-align: center;
           animation: presentation-childs 1s ease-out;
           animation-fill-mode: forwards;
           animation-delay: 1s;
           opacity: 0;
           background-color: white;
+          .naw-menu{
+            position: absolute;
+            color: black;
+            z-index: 50;
+            top: 0px;
+            opacity: 0;
+            left: 40%;
+            animation: nav-links-generate 2s ease-out;
+            animation-delay: 8s;
+            animation-fill-mode: forwards;
+            a{
+              margin: 0 2px;
+              font-size: 5px;
+            }
+          }
           @media only screen and (max-width: 1400px) {
             height: 3%;
             font-size: 8px;
@@ -409,5 +424,22 @@
     content: none;
   }
 }
+@keyframes nav-links-generate{
+  from {
+    display: none;
+    opacity: 0;
+    left: 30%;
+  }
+
+  to {
+    display: block;
+    opacity: 1;
+    content: none;
+    left: 38%;
+    color: white;
+  }
+}
+
+
 
 

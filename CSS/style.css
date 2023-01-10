@@ -812,7 +812,7 @@ header .header-container .right-side .bottom-menu li::after {
   height: 4%;
   border: 1px solid #d0cccc;
   color: gray;
-  font-size: 9px;
+  font-size: 10px;
   text-align: center;
   -webkit-animation: presentation-childs 1s ease-out;
           animation: presentation-childs 1s ease-out;
@@ -822,6 +822,26 @@ header .header-container .right-side .bottom-menu li::after {
           animation-delay: 1s;
   opacity: 0;
   background-color: white;
+}
+
+.main .skills-article .skills-article-container .presentation-container .presentation-header .naw-menu {
+  position: absolute;
+  color: black;
+  z-index: 50;
+  top: 0px;
+  opacity: 0;
+  left: 40%;
+  -webkit-animation: nav-links-generate 2s ease-out;
+          animation: nav-links-generate 2s ease-out;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main .skills-article .skills-article-container .presentation-container .presentation-header .naw-menu a {
+  margin: 0 2px;
+  font-size: 5px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1307,6 +1327,36 @@ header .header-container .right-side .bottom-menu li::after {
     margin: 0;
     opacity: 1;
     content: none;
+  }
+}
+
+@-webkit-keyframes nav-links-generate {
+  from {
+    display: none;
+    opacity: 0;
+    left: 30%;
+  }
+  to {
+    display: block;
+    opacity: 1;
+    content: none;
+    left: 38%;
+    color: white;
+  }
+}
+
+@keyframes nav-links-generate {
+  from {
+    display: none;
+    opacity: 0;
+    left: 30%;
+  }
+  to {
+    display: block;
+    opacity: 1;
+    content: none;
+    left: 38%;
+    color: white;
   }
 }
 
